@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: titra-idp-demo
+  description: React Demo Application
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: joseph.titra@harness.io
+  lifecycle: experimental
