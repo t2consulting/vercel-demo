@@ -394,7 +394,7 @@ export const shape = {
   borderRadius: 8,
 };
 
-// @ts-ignore
+// @ts-ignore mui provided theme
 const defaultShadows: Shadows = [
   'none',
   'var(--template-palette-baseShadow)',

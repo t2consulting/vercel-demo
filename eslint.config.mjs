@@ -11,6 +11,22 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    // Example: you may already have overrides or ignores here
+    ignores: [
+      // e.g. '.next/**/*'
+    ],
+  },
+  {
+    // Turn off rules for all source files
+    files: ['**/*.ts?(x)', '**/*.js?(x)'],
+    rules: {
+      "@typescript-eslint/ban-ts-comment": ["error", { "ts-ignore": "allow-with-description" }],
+      'react/display-name': 'off',
+      '@typescript-eslint/no-empty-interface': 'off',
+      '@typescript-eslint/no-empty-object-type': 'off',
+    },
+  },
 ];
 
 export default eslintConfig;
