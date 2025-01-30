@@ -186,9 +186,9 @@ export default function MainContent() {
 
       <div>
         <Typography variant="h1" gutterBottom>
-          Titra IDP Demo
+          Titra Demo
         </Typography>
-        <Typography>React Demo Application</Typography>
+        <Typography>Sample React Application</Typography>
       </div>
 
       <Box
